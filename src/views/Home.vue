@@ -1,21 +1,13 @@
 <template>
-  <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js + Flask App"/>
-  </div>
+  <HomeContent />
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HomeContent from '../components/HomeContent'
 
 export default {
-  name: 'home',
   components: {
-    HelloWorld
+    HomeContent
   }
 }
 </script>
-
-<style lang="scss">
-
-</style>

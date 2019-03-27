@@ -1,48 +1,36 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/api">API Sample</router-link>
-    </div>
-    <div id="logos">
-      <p>
-        <img src="@/assets/vue-logo.png">
-        <span id="plus">+</span>
-        <img src="@/assets/flask-logo.png">
-      </p>
-    </div>
-    <router-view/>
+  <v-app>
+    <v-toolbar app color="#EEF6F6">
+      <v-toolbar-title class="headline text-uppercase">
+        <router-link to="/">
+          <span>Future</span>
+          <span class="font-weight-light"> Jobs</span>
+        </router-link>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn
+        flat
+        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        target="_blank"
+      >
+        <span class="mr-2"></span>
+      </v-btn>
+    </v-toolbar>
 
-    <!-- FORK Me -->
-    <a href="https://github.com/gtalarico/flask-vuejs-template"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
-
-  </div>
+    <v-content>
+       <router-view/>
+    </v-content>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+
+export default {
+  name: 'App',
+  data () {
+    return {
+      //
     }
   }
 }
-#plus {
-  padding: 0 20px 0 20px;
-  display: inline-block;
-  font-size: 50px;
-  vertical-align: top;
-  line-height: 100px;
-}
-
-</style>
+</script>

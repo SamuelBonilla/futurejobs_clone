@@ -1,5 +1,8 @@
 # Flask-VueJs-Template 🌶️✌
 
+python manage.py db init && python manage.py db migrate && python manage.py db upgrade
+
+
 [![Build Status](https://travis-ci.org/gtalarico/flask-vuejs-template.svg?branch=master)](https://travis-ci.org/gtalarico/flask-vuejs-template)
 [![codecov](https://codecov.io/gh/gtalarico/flask-vuejs-template/branch/master/graph/badge.svg)](https://codecov.io/gh/gtalarico/flask-vuejs-template)
 

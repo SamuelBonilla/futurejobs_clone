@@ -4,6 +4,7 @@
 .env
 
 /dist
+/migrations
 .coverage
 .pytest_cache/
 htmlcov/
