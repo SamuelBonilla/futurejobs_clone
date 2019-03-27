@@ -7,7 +7,7 @@
     >
       <v-flex xs12>
         <h1> Post a new Job </h1>
-        <v-form @submit.prevent="submit" v-model="valide">
+        <v-form @submit.prevent="submit">
           <v-text-field
             v-model="title"
             :counter="20"

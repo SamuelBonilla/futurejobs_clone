@@ -15,8 +15,7 @@ class Config(object):
     # Set FLASK_SECRET on your production Environment
     SECRET_KEY = os.getenv('FLASK_SECRET', 'Secret')
 
-    SQLALCHEMY_DATABASE_URI = 'postgres://ohxudrwqqhmurt:13874ba7ba3339a5855e5868d0e00774afbe3ef6356e6095c341647c4ce6b0d0@ec2-184-73-216-48.compute-1.amazonaws.com:5432/dd2vcmkehsh0nb
-'
+    SQLALCHEMY_DATABASE_URI = 'postgres://ohxudrwqqhmurt:13874ba7ba3339a5855e5868d0e00774afbe3ef6356e6095c341647c4ce6b0d0@ec2-184-73-216-48.compute-1.amazonaws.com:5432/dd2vcmkehsh0nb'
     DB = db
     MODEL = {
         'job_post': JobPost 
