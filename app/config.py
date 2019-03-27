@@ -19,7 +19,7 @@ class Config(object):
 '
     DB = db
     MODEL = {
-        'job_post': JobPost
+        'job_post': JobPost 
     }
     APP_DIR = os.path.dirname(__file__)
     ROOT_DIR = os.path.dirname(APP_DIR)
